@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T15:06:59.952Z",
+  "generatedAt": "2026-08-09T16:10:05.021Z",
   "site": {
     "businessName": "Atef Tech Gadgets",
     "tagline": "Mechanical keyboards, mice and gear — picked for people who care about their setup.",
@@ -397,6 +397,41 @@
               "categoryName": "Keyboards",
               "subcategorySlug": "membrane",
               "subcategoryName": "Membrane"
+            }
+          ]
+        },
+        {
+          "slug": "semi-mechanical",
+          "displayName": "Mechanical",
+          "description": "Full tactile and clicky switches for typists and gamers who want precision.",
+          "products": [
+            {
+              "slug": "redragon",
+              "name": "Redragon F123",
+              "description": "Tenkeyless Semi-mechanical keyboard with hot-swappable switches and per-key RGB lighting.",
+              "price": 55,
+              "discount": 10,
+              "finalPrice": 49.5,
+              "currency": "USD",
+              "specs": {
+                "Layout": "TKL (87-key)",
+                "Switches": "Hot-swappable, brown tactile (included)",
+                "Connectivity": "USB-C wired",
+                "Backlight": "Per-key RGB"
+              },
+              "tags": [
+                "tenkeyless",
+                "rgb",
+                "hot-swap"
+              ],
+              "inStock": true,
+              "featured": true,
+              "isNew": false,
+              "image": "products/keyboards/semi-mechanical/images/Redragon.png",
+              "categorySlug": "keyboards",
+              "categoryName": "Keyboards",
+              "subcategorySlug": "semi-mechanical",
+              "subcategoryName": "Mechanical"
             }
           ]
         }
@@ -979,6 +1014,34 @@
       "categoryName": "Keyboards",
       "subcategorySlug": "membrane",
       "subcategoryName": "Membrane"
+    },
+    {
+      "slug": "redragon",
+      "name": "Redragon F123",
+      "description": "Tenkeyless Semi-mechanical keyboard with hot-swappable switches and per-key RGB lighting.",
+      "price": 55,
+      "discount": 10,
+      "finalPrice": 49.5,
+      "currency": "USD",
+      "specs": {
+        "Layout": "TKL (87-key)",
+        "Switches": "Hot-swappable, brown tactile (included)",
+        "Connectivity": "USB-C wired",
+        "Backlight": "Per-key RGB"
+      },
+      "tags": [
+        "tenkeyless",
+        "rgb",
+        "hot-swap"
+      ],
+      "inStock": true,
+      "featured": true,
+      "isNew": false,
+      "image": "products/keyboards/semi-mechanical/images/Redragon.png",
+      "categorySlug": "keyboards",
+      "categoryName": "Keyboards",
+      "subcategorySlug": "semi-mechanical",
+      "subcategoryName": "Mechanical"
     },
     {
       "slug": "raptor-gx",
