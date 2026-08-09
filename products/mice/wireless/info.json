@@ -1,0 +1,36 @@
+{
+  "displayName": "Wireless",
+  "description": "Cable-free mice for a clean desk and everyday comfort.",
+  "products": [
+    {
+      "slug": "nova-wireless",
+      "name": "Nova Wireless",
+      "price": 59.99,
+      "discount": 20,
+      "description": "Ergonomic wireless mouse with a silent click and 18-month battery life.",
+      "specs": {
+        "Connectivity": "2.4GHz + Bluetooth",
+        "Battery Life": "Up to 18 months",
+        "DPI": "800 / 1200 / 1600"
+      },
+      "tags": ["wireless", "ergonomic", "silent"],
+      "inStock": true,
+      "featured": true
+    },
+    {
+      "slug": "glide-air",
+      "name": "Glide Air",
+      "price": 49.99,
+      "discount": 0,
+      "description": "Ultra-light wireless mouse built for effortless everyday movement.",
+      "specs": {
+        "Connectivity": "2.4GHz USB receiver",
+        "Weight": "68g",
+        "DPI": "Up to 4000"
+      },
+      "tags": ["wireless", "lightweight"],
+      "inStock": true,
+      "featured": false
+    }
+  ]
+}

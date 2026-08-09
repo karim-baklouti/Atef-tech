@@ -1,0 +1,16 @@
+{
+  "businessName": "Atef Tech Gadgets",
+  "tagline": "Mechanical keyboards, mice and gear — picked for people who care about their setup.",
+  "currency": "USD",
+  "currencySymbol": "$",
+  "contact": {
+    "email": "you@yourbusiness.com",
+    "whatsapp": "",
+    "instagram": "",
+    "telegram": ""
+  },
+  "theme": {
+    "primaryColor": "#5b8def",
+    "accentColor": "#ff6b6b"
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "generatedAt": "2026-08-09T14:52:19.205Z",
+  "site": {
+    "businessName": "Atef Tech Gadgets",
+    "tagline": "Mechanical keyboards, mice and gear — picked for people who care about their setup.",
+    "currency": "USD",
+    "currencySymbol": "$",
+    "contact": {
+      "email": "you@yourbusiness.com",
+      "whatsapp": "",
+      "instagram": "",
+      "telegram": ""
+    },
+    "theme": {
+      "primaryColor": "#5b8def",
+      "accentColor": "#ff6b6b"
+    }
+  },
+  "categories": [
+    {
+      "slug": "keyboards",
+      "displayName": "Keyboards",
+      "description": "Mechanical, membrane and everything in between.",
+      "subcategories": [
+        {
+          "slug": "mechanical",
+          "displayName": "Mechanical",
+          "description": "Full tactile and clicky switches for typists and gamers who want precision.",
+          "products": [
+            {
+              "slug": "aurora-tkl",
+              "name": "Aurora TKL",
+              "description": "Tenkeyless mechanical keyboard with hot-swappable switches and per-key RGB lighting.",
+              "price": 129.99,
+              "discount": 10,
+              "finalPrice": 116.99,
+              "currency": "USD",
+              "specs": {
+                "Layout": "TKL (87-key)",
+                "Switches": "Hot-swappable, brown tactile (included)",
+                "Connectivity": "USB-C wired",
+                "Backlight": "Per-key RGB"
+              },
+              "tags": [
+                "tenkeyless",
+                "rgb",
+                "hot-swap"
+              ],
+              "inStock": true,
+              "featured": true,
+              "image": "products/keyboards/mechanical/images/aurora-tkl.svg",
+              "categorySlug": "keyboards",
+              "categoryName": "Keyboards",
+              "subcategorySlug": "mechanical",
+              "subcategoryName": "Mechanical"
+            },
+            {
+              "slug": "titan-full-size",
+              "name": "Titan Full-Size",
+              "description": "Full-size mechanical keyboard built for long sessions, with a solid aluminum frame.",
+              "price": 149,
+              "discount": 0,
+              "finalPrice": 149,
+              "currency": "USD",
+              "specs": {
+                "Layout": "Full-size (104-key)",
+                "Switches": "Linear red",
+                "Connectivity": "USB-C wired",
+                "Backlight": "White backlight"
+              },
+              "tags": [
+                "full-size",
+                "aluminum"
+              ],
+              "inStock": true,
+              "featured": false,
+              "image": "products/keyboards/mechanical/images/titan-full-size.svg",
+              "categorySlug": "keyboards",
+              "categoryName": "Keyboards",
+              "subcategorySlug": "mechanical",
+              "subcategoryName": "Mechanical"
+            }
+          ]
+        },
+        {
+          "slug": "membrane",
+          "displayName": "Membrane",
+          "description": "Quiet, affordable everyday keyboards for the office or home desk.",
+          "products": [
+            {
+              "slug": "breeze-office",
+              "name": "Breeze Office",
+              "description": "Whisper-quiet membrane keyboard designed for all-day office typing.",
+              "price": 39.99,
+              "discount": 15,
+              "finalPrice": 33.99,
+              "currency": "USD",
+              "specs": {
+                "Layout": "Full-size (104-key)",
+                "Connectivity": "USB wired",
+                "Noise Level": "Low"
+              },
+              "tags": [
+                "office",
+                "quiet",
+                "budget"
+              ],
+              "inStock": true,
+              "featured": false,
+              "image": "products/keyboards/membrane/images/breeze-office.svg",
+              "categorySlug": "keyboards",
+              "categoryName": "Keyboards",
+              "subcategorySlug": "membrane",
+              "subcategoryName": "Membrane"
+            },
+            {
+              "slug": "quietype-slim",
+              "name": "QuieType Slim",
+              "description": "Slim-profile membrane keyboard with scissor-switch keys for a soft, quiet feel.",
+              "price": 34.5,
+              "discount": 0,
+              "finalPrice": 34.5,
+              "currency": "USD",
+              "specs": {
+                "Layout": "Compact (84-key)",
+                "Connectivity": "USB wired",
+                "Profile": "Low-profile scissor switches"
+              },
+              "tags": [
+                "slim",
+                "compact",
+                "quiet"
+              ],
+              "inStock": true,
+              "featured": false,
+              "image": "products/keyboards/membrane/images/quietype-slim.svg",
+              "categorySlug": "keyboards",
+              "categoryName": "Keyboards",
+              "subcategorySlug": "membrane",
+              "subcategoryName": "Membrane"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mice",
+      "displayName": "Mice",
+      "description": "Precision pointing devices for work and play.",
+      "subcategories": [
+        {
+          "slug": "gaming",
+          "displayName": "Gaming",
+          "description": "High-precision mice tuned for speed and competitive play.",
+          "products": [
+            {
+              "slug": "raptor-gx",
+              "name": "Raptor GX",
+              "description": "Competitive gaming mouse with a 26K DPI optical sensor and ultra-light shell.",
+              "price": 79.99,
+              "discount": 25,
+              "finalPrice": 59.99,
+              "currency": "USD",
+              "specs": {
+                "Sensor": "26,000 DPI optical",
+                "Connectivity": "Wired, USB-C",
+                "Weight": "58g",
+                "Polling Rate": "1000Hz"
+              },
+              "tags": [
+                "gaming",
+                "lightweight",
+                "rgb"
+              ],
+              "inStock": true,
+              "featured": true,
+              "image": "products/mice/gaming/images/raptor-gx.svg",
+              "categorySlug": "mice",
+              "categoryName": "Mice",
+              "subcategorySlug": "gaming",
+              "subcategoryName": "Gaming"
+            },
+            {
+              "slug": "vector-pro",
+              "name": "Vector Pro",
+              "description": "Wireless gaming mouse with pro-grade tracking and zero perceptible latency.",
+              "price": 89.99,
+              "discount": 0,
+              "finalPrice": 89.99,
+              "currency": "USD",
+              "specs": {
+                "Sensor": "20,000 DPI optical",
+                "Connectivity": "2.4GHz wireless",
+                "Battery Life": "Up to 70 hours",
+                "Polling Rate": "1000Hz"
+              },
+              "tags": [
+                "gaming",
+                "wireless"
+              ],
+              "inStock": true,
+              "featured": false,
+              "image": "products/mice/gaming/images/vector-pro.svg",
+              "categorySlug": "mice",
+              "categoryName": "Mice",
+              "subcategorySlug": "gaming",
+              "subcategoryName": "Gaming"
+            }
+          ]
+        },
+        {
+          "slug": "wireless",
+          "displayName": "Wireless",
+          "description": "Cable-free mice for a clean desk and everyday comfort.",
+          "products": [
+            {
+              "slug": "nova-wireless",
+              "name": "Nova Wireless",
+              "description": "Ergonomic wireless mouse with a silent click and 18-month battery life.",
+              "price": 59.99,
+              "discount": 20,
+              "finalPrice": 47.99,
+              "currency": "USD",
+              "specs": {
+                "Connectivity": "2.4GHz + Bluetooth",
+                "Battery Life": "Up to 18 months",
+                "DPI": "800 / 1200 / 1600"
+              },
+              "tags": [
+                "wireless",
+                "ergonomic",
+                "silent"
+              ],
+              "inStock": true,
+              "featured": true,
+              "image": "products/mice/wireless/images/nova-wireless.svg",
+              "categorySlug": "mice",
+              "categoryName": "Mice",
+              "subcategorySlug": "wireless",
+              "subcategoryName": "Wireless"
+            },
+            {
+              "slug": "glide-air",
+              "name": "Glide Air",
+              "description": "Ultra-light wireless mouse built for effortless everyday movement.",
+              "price": 49.99,
+              "discount": 0,
+              "finalPrice": 49.99,
+              "currency": "USD",
+              "specs": {
+                "Connectivity": "2.4GHz USB receiver",
+                "Weight": "68g",
+                "DPI": "Up to 4000"
+              },
+              "tags": [
+                "wireless",
+                "lightweight"
+              ],
+              "inStock": true,
+              "featured": false,
+              "image": "products/mice/wireless/images/glide-air.svg",
+              "categorySlug": "mice",
+              "categoryName": "Mice",
+              "subcategorySlug": "wireless",
+              "subcategoryName": "Wireless"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "slug": "aurora-tkl",
+      "name": "Aurora TKL",
+      "description": "Tenkeyless mechanical keyboard with hot-swappable switches and per-key RGB lighting.",
+      "price": 129.99,
+      "discount": 10,
+      "finalPrice": 116.99,
+      "currency": "USD",
+      "specs": {
+        "Layout": "TKL (87-key)",
+        "Switches": "Hot-swappable, brown tactile (included)",
+        "Connectivity": "USB-C wired",
+        "Backlight": "Per-key RGB"
+      },
+      "tags": [
+        "tenkeyless",
+        "rgb",
+        "hot-swap"
+      ],
+      "inStock": true,
+      "featured": true,
+      "image": "products/keyboards/mechanical/images/aurora-tkl.svg",
+      "categorySlug": "keyboards",
+      "categoryName": "Keyboards",
+      "subcategorySlug": "mechanical",
+      "subcategoryName": "Mechanical"
+    },
+    {
+      "slug": "titan-full-size",
+      "name": "Titan Full-Size",
+      "description": "Full-size mechanical keyboard built for long sessions, with a solid aluminum frame.",
+      "price": 149,
+      "discount": 0,
+      "finalPrice": 149,
+      "currency": "USD",
+      "specs": {
+        "Layout": "Full-size (104-key)",
+        "Switches": "Linear red",
+        "Connectivity": "USB-C wired",
+        "Backlight": "White backlight"
+      },
+      "tags": [
+        "full-size",
+        "aluminum"
+      ],
+      "inStock": true,
+      "featured": false,
+      "image": "products/keyboards/mechanical/images/titan-full-size.svg",
+      "categorySlug": "keyboards",
+      "categoryName": "Keyboards",
+      "subcategorySlug": "mechanical",
+      "subcategoryName": "Mechanical"
+    },
+    {
+      "slug": "breeze-office",
+      "name": "Breeze Office",
+      "description": "Whisper-quiet membrane keyboard designed for all-day office typing.",
+      "price": 39.99,
+      "discount": 15,
+      "finalPrice": 33.99,
+      "currency": "USD",
+      "specs": {
+        "Layout": "Full-size (104-key)",
+        "Connectivity": "USB wired",
+        "Noise Level": "Low"
+      },
+      "tags": [
+        "office",
+        "quiet",
+        "budget"
+      ],
+      "inStock": true,
+      "featured": false,
+      "image": "products/keyboards/membrane/images/breeze-office.svg",
+      "categorySlug": "keyboards",
+      "categoryName": "Keyboards",
+      "subcategorySlug": "membrane",
+      "subcategoryName": "Membrane"
+    },
+    {
+      "slug": "quietype-slim",
+      "name": "QuieType Slim",
+      "description": "Slim-profile membrane keyboard with scissor-switch keys for a soft, quiet feel.",
+      "price": 34.5,
+      "discount": 0,
+      "finalPrice": 34.5,
+      "currency": "USD",
+      "specs": {
+        "Layout": "Compact (84-key)",
+        "Connectivity": "USB wired",
+        "Profile": "Low-profile scissor switches"
+      },
+      "tags": [
+        "slim",
+        "compact",
+        "quiet"
+      ],
+      "inStock": true,
+      "featured": false,
+      "image": "products/keyboards/membrane/images/quietype-slim.svg",
+      "categorySlug": "keyboards",
+      "categoryName": "Keyboards",
+      "subcategorySlug": "membrane",
+      "subcategoryName": "Membrane"
+    },
+    {
+      "slug": "raptor-gx",
+      "name": "Raptor GX",
+      "description": "Competitive gaming mouse with a 26K DPI optical sensor and ultra-light shell.",
+      "price": 79.99,
+      "discount": 25,
+      "finalPrice": 59.99,
+      "currency": "USD",
+      "specs": {
+        "Sensor": "26,000 DPI optical",
+        "Connectivity": "Wired, USB-C",
+        "Weight": "58g",
+        "Polling Rate": "1000Hz"
+      },
+      "tags": [
+        "gaming",
+        "lightweight",
+        "rgb"
+      ],
+      "inStock": true,
+      "featured": true,
+      "image": "products/mice/gaming/images/raptor-gx.svg",
+      "categorySlug": "mice",
+      "categoryName": "Mice",
+      "subcategorySlug": "gaming",
+      "subcategoryName": "Gaming"
+    },
+    {
+      "slug": "vector-pro",
+      "name": "Vector Pro",
+      "description": "Wireless gaming mouse with pro-grade tracking and zero perceptible latency.",
+      "price": 89.99,
+      "discount": 0,
+      "finalPrice": 89.99,
+      "currency": "USD",
+      "specs": {
+        "Sensor": "20,000 DPI optical",
+        "Connectivity": "2.4GHz wireless",
+        "Battery Life": "Up to 70 hours",
+        "Polling Rate": "1000Hz"
+      },
+      "tags": [
+        "gaming",
+        "wireless"
+      ],
+      "inStock": true,
+      "featured": false,
+      "image": "products/mice/gaming/images/vector-pro.svg",
+      "categorySlug": "mice",
+      "categoryName": "Mice",
+      "subcategorySlug": "gaming",
+      "subcategoryName": "Gaming"
+    },
+    {
+      "slug": "nova-wireless",
+      "name": "Nova Wireless",
+      "description": "Ergonomic wireless mouse with a silent click and 18-month battery life.",
+      "price": 59.99,
+      "discount": 20,
+      "finalPrice": 47.99,
+      "currency": "USD",
+      "specs": {
+        "Connectivity": "2.4GHz + Bluetooth",
+        "Battery Life": "Up to 18 months",
+        "DPI": "800 / 1200 / 1600"
+      },
+      "tags": [
+        "wireless",
+        "ergonomic",
+        "silent"
+      ],
+      "inStock": true,
+      "featured": true,
+      "image": "products/mice/wireless/images/nova-wireless.svg",
+      "categorySlug": "mice",
+      "categoryName": "Mice",
+      "subcategorySlug": "wireless",
+      "subcategoryName": "Wireless"
+    },
+    {
+      "slug": "glide-air",
+      "name": "Glide Air",
+      "description": "Ultra-light wireless mouse built for effortless everyday movement.",
+      "price": 49.99,
+      "discount": 0,
+      "finalPrice": 49.99,
+      "currency": "USD",
+      "specs": {
+        "Connectivity": "2.4GHz USB receiver",
+        "Weight": "68g",
+        "DPI": "Up to 4000"
+      },
+      "tags": [
+        "wireless",
+        "lightweight"
+      ],
+      "inStock": true,
+      "featured": false,
+      "image": "products/mice/wireless/images/glide-air.svg",
+      "categorySlug": "mice",
+      "categoryName": "Mice",
+      "subcategorySlug": "wireless",
+      "subcategoryName": "Wireless"
+    }
+  ]
+}

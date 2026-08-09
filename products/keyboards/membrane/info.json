@@ -1,0 +1,36 @@
+{
+  "displayName": "Membrane",
+  "description": "Quiet, affordable everyday keyboards for the office or home desk.",
+  "products": [
+    {
+      "slug": "breeze-office",
+      "name": "Breeze Office",
+      "price": 39.99,
+      "discount": 15,
+      "description": "Whisper-quiet membrane keyboard designed for all-day office typing.",
+      "specs": {
+        "Layout": "Full-size (104-key)",
+        "Connectivity": "USB wired",
+        "Noise Level": "Low"
+      },
+      "tags": ["office", "quiet", "budget"],
+      "inStock": true,
+      "featured": false
+    },
+    {
+      "slug": "quietype-slim",
+      "name": "QuieType Slim",
+      "price": 34.5,
+      "discount": 0,
+      "description": "Slim-profile membrane keyboard with scissor-switch keys for a soft, quiet feel.",
+      "specs": {
+        "Layout": "Compact (84-key)",
+        "Connectivity": "USB wired",
+        "Profile": "Low-profile scissor switches"
+      },
+      "tags": ["slim", "compact", "quiet"],
+      "inStock": true,
+      "featured": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "displayName": "Mechanical",
+  "description": "Full tactile and clicky switches for typists and gamers who want precision.",
+  "products": [
+    {
+      "slug": "aurora-tkl",
+      "name": "Aurora TKL",
+      "price": 129.99,
+      "discount": 10,
+      "description": "Tenkeyless mechanical keyboard with hot-swappable switches and per-key RGB lighting.",
+      "specs": {
+        "Layout": "TKL (87-key)",
+        "Switches": "Hot-swappable, brown tactile (included)",
+        "Connectivity": "USB-C wired",
+        "Backlight": "Per-key RGB"
+      },
+      "tags": ["tenkeyless", "rgb", "hot-swap"],
+      "inStock": true,
+      "featured": true
+    },
+    {
+      "slug": "titan-full-size",
+      "name": "Titan Full-Size",
+      "price": 149.0,
+      "discount": 0,
+      "description": "Full-size mechanical keyboard built for long sessions, with a solid aluminum frame.",
+      "specs": {
+        "Layout": "Full-size (104-key)",
+        "Switches": "Linear red",
+        "Connectivity": "USB-C wired",
+        "Backlight": "White backlight"
+      },
+      "tags": ["full-size", "aluminum"],
+      "inStock": true,
+      "featured": false
+    }
+  ]
+}

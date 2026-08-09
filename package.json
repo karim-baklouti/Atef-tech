@@ -1,0 +1,10 @@
+{
+  "name": "atef-tech-gadgets-store",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static product catalog for Atef Tech Gadgets, deployed on GitHub Pages.",
+  "scripts": {
+    "build": "node scripts/build-catalog.js",
+    "dev": "node scripts/build-catalog.js && npx --yes serve ."
+  }
+}

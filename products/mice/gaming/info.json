@@ -1,0 +1,38 @@
+{
+  "displayName": "Gaming",
+  "description": "High-precision mice tuned for speed and competitive play.",
+  "products": [
+    {
+      "slug": "raptor-gx",
+      "name": "Raptor GX",
+      "price": 79.99,
+      "discount": 25,
+      "description": "Competitive gaming mouse with a 26K DPI optical sensor and ultra-light shell.",
+      "specs": {
+        "Sensor": "26,000 DPI optical",
+        "Connectivity": "Wired, USB-C",
+        "Weight": "58g",
+        "Polling Rate": "1000Hz"
+      },
+      "tags": ["gaming", "lightweight", "rgb"],
+      "inStock": true,
+      "featured": true
+    },
+    {
+      "slug": "vector-pro",
+      "name": "Vector Pro",
+      "price": 89.99,
+      "discount": 0,
+      "description": "Wireless gaming mouse with pro-grade tracking and zero perceptible latency.",
+      "specs": {
+        "Sensor": "20,000 DPI optical",
+        "Connectivity": "2.4GHz wireless",
+        "Battery Life": "Up to 70 hours",
+        "Polling Rate": "1000Hz"
+      },
+      "tags": ["gaming", "wireless"],
+      "inStock": true,
+      "featured": false
+    }
+  ]
+}
