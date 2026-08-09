@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T14:52:19.205Z",
+  "generatedAt": "2026-08-09T15:06:59.952Z",
   "site": {
     "businessName": "Atef Tech Gadgets",
     "tagline": "Mechanical keyboards, mice and gear — picked for people who care about their setup.",
@@ -17,6 +17,261 @@
     }
   },
   "categories": [
+    {
+      "slug": "accessories",
+      "displayName": "Desk Accessories",
+      "description": "Small gear that makes a big difference at your desk.",
+      "subcategories": [
+        {
+          "slug": "mousepads",
+          "displayName": "Mousepads",
+          "description": "Smooth, stable surfaces sized for every setup.",
+          "products": [
+            {
+              "slug": "drift-xxl",
+              "name": "Drift XXL",
+              "description": "Extended desk mat that fits your keyboard, mouse and more.",
+              "price": 24.99,
+              "discount": 0,
+              "finalPrice": 24.99,
+              "currency": "USD",
+              "specs": {
+                "Size": "900 x 400mm",
+                "Surface": "Micro-woven cloth",
+                "Base": "Non-slip rubber"
+              },
+              "tags": [
+                "extended",
+                "cloth"
+              ],
+              "inStock": true,
+              "featured": false,
+              "isNew": false,
+              "image": "products/accessories/mousepads/images/drift-xxl.svg",
+              "categorySlug": "accessories",
+              "categoryName": "Desk Accessories",
+              "subcategorySlug": "mousepads",
+              "subcategoryName": "Mousepads"
+            },
+            {
+              "slug": "glide-zero",
+              "name": "Glide Zero",
+              "description": "Hard, low-friction surface built for fast, precise mouse control.",
+              "price": 19.99,
+              "discount": 10,
+              "finalPrice": 17.99,
+              "currency": "USD",
+              "specs": {
+                "Size": "450 x 400mm",
+                "Surface": "Hard polymer",
+                "Base": "Non-slip rubber"
+              },
+              "tags": [
+                "hard-surface",
+                "gaming"
+              ],
+              "inStock": true,
+              "featured": false,
+              "isNew": false,
+              "image": "products/accessories/mousepads/images/glide-zero.svg",
+              "categorySlug": "accessories",
+              "categoryName": "Desk Accessories",
+              "subcategorySlug": "mousepads",
+              "subcategoryName": "Mousepads"
+            }
+          ]
+        },
+        {
+          "slug": "stands",
+          "displayName": "Stands & Mounts",
+          "description": "Ergonomic lifts for laptops and monitors.",
+          "products": [
+            {
+              "slug": "elevate-laptop-stand",
+              "name": "Elevate Laptop Stand",
+              "description": "Adjustable aluminum stand that raises your laptop to eye level.",
+              "price": 34.99,
+              "discount": 0,
+              "finalPrice": 34.99,
+              "currency": "USD",
+              "specs": {
+                "Material": "Aluminum",
+                "Adjustability": "6 height levels",
+                "Compatibility": "11 to 17 inch laptops"
+              },
+              "tags": [
+                "ergonomic",
+                "aluminum"
+              ],
+              "inStock": true,
+              "featured": false,
+              "isNew": false,
+              "image": "products/accessories/stands/images/elevate-laptop-stand.svg",
+              "categorySlug": "accessories",
+              "categoryName": "Desk Accessories",
+              "subcategorySlug": "stands",
+              "subcategoryName": "Stands & Mounts"
+            },
+            {
+              "slug": "orbit-monitor-arm",
+              "name": "Orbit Monitor Arm",
+              "description": "Full-motion monitor arm that frees up your entire desk surface.",
+              "price": 69,
+              "discount": 15,
+              "finalPrice": 58.65,
+              "currency": "USD",
+              "specs": {
+                "Load Capacity": "2 to 9kg",
+                "Mount": "Desk clamp / grommet",
+                "Motion": "Full articulation"
+              },
+              "tags": [
+                "ergonomic",
+                "monitor-arm"
+              ],
+              "inStock": true,
+              "featured": true,
+              "isNew": false,
+              "image": "products/accessories/stands/images/orbit-monitor-arm.svg",
+              "categorySlug": "accessories",
+              "categoryName": "Desk Accessories",
+              "subcategorySlug": "stands",
+              "subcategoryName": "Stands & Mounts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "audio",
+      "displayName": "Audio",
+      "description": "Headphones, earbuds and speakers for calls, music and gaming.",
+      "subcategories": [
+        {
+          "slug": "headphones",
+          "displayName": "Headphones",
+          "description": "Over-ear and in-ear audio for focus, calls and gaming.",
+          "products": [
+            {
+              "slug": "sonic-wave-anc",
+              "name": "Sonic Wave ANC",
+              "description": "Over-ear headphones with active noise cancellation and 35-hour battery life.",
+              "price": 179,
+              "discount": 12,
+              "finalPrice": 157.52,
+              "currency": "USD",
+              "specs": {
+                "Type": "Over-ear, closed-back",
+                "Noise Cancelling": "Active (ANC)",
+                "Battery Life": "Up to 35 hours",
+                "Connectivity": "Bluetooth 5.3 / 3.5mm"
+              },
+              "tags": [
+                "anc",
+                "wireless",
+                "over-ear"
+              ],
+              "inStock": true,
+              "featured": true,
+              "isNew": false,
+              "image": "products/audio/headphones/images/sonic-wave-anc.svg",
+              "categorySlug": "audio",
+              "categoryName": "Audio",
+              "subcategorySlug": "headphones",
+              "subcategoryName": "Headphones"
+            },
+            {
+              "slug": "airpulse-buds",
+              "name": "AirPulse Buds",
+              "description": "True wireless earbuds with a compact charging case and punchy bass.",
+              "price": 89.99,
+              "discount": 0,
+              "finalPrice": 89.99,
+              "currency": "USD",
+              "specs": {
+                "Type": "In-ear, true wireless",
+                "Battery Life": "6h (24h with case)",
+                "Connectivity": "Bluetooth 5.2",
+                "Water Resistance": "IPX4"
+              },
+              "tags": [
+                "wireless",
+                "earbuds",
+                "compact"
+              ],
+              "inStock": true,
+              "featured": false,
+              "isNew": true,
+              "image": "products/audio/headphones/images/airpulse-buds.svg",
+              "categorySlug": "audio",
+              "categoryName": "Audio",
+              "subcategorySlug": "headphones",
+              "subcategoryName": "Headphones"
+            }
+          ]
+        },
+        {
+          "slug": "speakers",
+          "displayName": "Speakers",
+          "description": "Desktop and portable speakers for richer sound.",
+          "products": [
+            {
+              "slug": "boom-cube-mini",
+              "name": "Boom Cube Mini",
+              "description": "Pocket-size Bluetooth speaker with surprisingly big bass.",
+              "price": 44.99,
+              "discount": 18,
+              "finalPrice": 36.89,
+              "currency": "USD",
+              "specs": {
+                "Output": "10W",
+                "Battery Life": "Up to 12 hours",
+                "Connectivity": "Bluetooth 5.0",
+                "Water Resistance": "IPX6"
+              },
+              "tags": [
+                "bluetooth",
+                "portable"
+              ],
+              "inStock": true,
+              "featured": false,
+              "isNew": false,
+              "image": "products/audio/speakers/images/boom-cube-mini.svg",
+              "categorySlug": "audio",
+              "categoryName": "Audio",
+              "subcategorySlug": "speakers",
+              "subcategoryName": "Speakers"
+            },
+            {
+              "slug": "resonate-pro",
+              "name": "Resonate Pro",
+              "description": "Desktop 2.0 speaker set tuned for music production and movies.",
+              "price": 129,
+              "discount": 0,
+              "finalPrice": 129,
+              "currency": "USD",
+              "specs": {
+                "Output": "2 x 25W",
+                "Connectivity": "USB-C / 3.5mm / Bluetooth",
+                "Drivers": "3-inch woofer + tweeter"
+              },
+              "tags": [
+                "desktop",
+                "hi-fi"
+              ],
+              "inStock": true,
+              "featured": false,
+              "isNew": false,
+              "image": "products/audio/speakers/images/resonate-pro.svg",
+              "categorySlug": "audio",
+              "categoryName": "Audio",
+              "subcategorySlug": "speakers",
+              "subcategoryName": "Speakers"
+            }
+          ]
+        }
+      ]
+    },
     {
       "slug": "keyboards",
       "displayName": "Keyboards",
@@ -48,6 +303,7 @@
               ],
               "inStock": true,
               "featured": true,
+              "isNew": false,
               "image": "products/keyboards/mechanical/images/aurora-tkl.svg",
               "categorySlug": "keyboards",
               "categoryName": "Keyboards",
@@ -74,6 +330,7 @@
               ],
               "inStock": true,
               "featured": false,
+              "isNew": false,
               "image": "products/keyboards/mechanical/images/titan-full-size.svg",
               "categorySlug": "keyboards",
               "categoryName": "Keyboards",
@@ -107,6 +364,7 @@
               ],
               "inStock": true,
               "featured": false,
+              "isNew": false,
               "image": "products/keyboards/membrane/images/breeze-office.svg",
               "categorySlug": "keyboards",
               "categoryName": "Keyboards",
@@ -133,6 +391,7 @@
               ],
               "inStock": true,
               "featured": false,
+              "isNew": false,
               "image": "products/keyboards/membrane/images/quietype-slim.svg",
               "categorySlug": "keyboards",
               "categoryName": "Keyboards",
@@ -174,6 +433,7 @@
               ],
               "inStock": true,
               "featured": true,
+              "isNew": false,
               "image": "products/mice/gaming/images/raptor-gx.svg",
               "categorySlug": "mice",
               "categoryName": "Mice",
@@ -200,6 +460,7 @@
               ],
               "inStock": true,
               "featured": false,
+              "isNew": false,
               "image": "products/mice/gaming/images/vector-pro.svg",
               "categorySlug": "mice",
               "categoryName": "Mice",
@@ -233,6 +494,7 @@
               ],
               "inStock": true,
               "featured": true,
+              "isNew": false,
               "image": "products/mice/wireless/images/nova-wireless.svg",
               "categorySlug": "mice",
               "categoryName": "Mice",
@@ -258,6 +520,7 @@
               ],
               "inStock": true,
               "featured": false,
+              "isNew": false,
               "image": "products/mice/wireless/images/glide-air.svg",
               "categorySlug": "mice",
               "categoryName": "Mice",
@@ -267,9 +530,347 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "power",
+      "displayName": "Power & Charging",
+      "description": "Keep every device topped up, at your desk or on the move.",
+      "subcategories": [
+        {
+          "slug": "hubs",
+          "displayName": "Hubs & Docks",
+          "description": "Expand your ports for multi-monitor, storage and networking.",
+          "products": [
+            {
+              "slug": "nexus-usb-c-hub",
+              "name": "Nexus USB-C Hub",
+              "description": "7-in-1 USB-C hub with HDMI, card reader and 100W pass-through.",
+              "price": 39.99,
+              "discount": 0,
+              "finalPrice": 39.99,
+              "currency": "USD",
+              "specs": {
+                "Ports": "HDMI, 2x USB-A, SD/microSD, USB-C PD",
+                "Video Output": "4K@60Hz",
+                "Power Delivery": "100W pass-through"
+              },
+              "tags": [
+                "usb-c",
+                "multiport"
+              ],
+              "inStock": true,
+              "featured": false,
+              "isNew": true,
+              "image": "products/power/hubs/images/nexus-usb-c-hub.svg",
+              "categorySlug": "power",
+              "categoryName": "Power & Charging",
+              "subcategorySlug": "hubs",
+              "subcategoryName": "Hubs & Docks"
+            },
+            {
+              "slug": "nexus-dock-pro",
+              "name": "Nexus Dock Pro",
+              "description": "Triple-monitor docking station for a full desktop setup from one cable.",
+              "price": 119,
+              "discount": 10,
+              "finalPrice": 107.1,
+              "currency": "USD",
+              "specs": {
+                "Video Output": "Triple 4K@60Hz",
+                "Ports": "Ethernet, 4x USB-A, USB-C, audio",
+                "Compatibility": "USB-C / Thunderbolt laptops"
+              },
+              "tags": [
+                "docking-station",
+                "multi-monitor"
+              ],
+              "inStock": true,
+              "featured": false,
+              "isNew": false,
+              "image": "products/power/hubs/images/nexus-dock-pro.svg",
+              "categorySlug": "power",
+              "categoryName": "Power & Charging",
+              "subcategorySlug": "hubs",
+              "subcategoryName": "Hubs & Docks"
+            }
+          ]
+        },
+        {
+          "slug": "power-banks",
+          "displayName": "Power Banks",
+          "description": "Portable battery packs for phones, tablets and laptops.",
+          "products": [
+            {
+              "slug": "volt-20k-power-bank",
+              "name": "Volt 20K Power Bank",
+              "description": "20,000mAh power bank with fast-charge output for phones and laptops.",
+              "price": 54.99,
+              "discount": 20,
+              "finalPrice": 43.99,
+              "currency": "USD",
+              "specs": {
+                "Capacity": "20,000mAh",
+                "Output": "USB-C PD 65W + USB-A",
+                "Recharge Time": "About 2.5 hours"
+              },
+              "tags": [
+                "fast-charge",
+                "high-capacity"
+              ],
+              "inStock": true,
+              "featured": true,
+              "isNew": true,
+              "image": "products/power/power-banks/images/volt-20k-power-bank.svg",
+              "categorySlug": "power",
+              "categoryName": "Power & Charging",
+              "subcategorySlug": "power-banks",
+              "subcategoryName": "Power Banks"
+            },
+            {
+              "slug": "volt-10k-slim",
+              "name": "Volt 10K Slim",
+              "description": "Slim 10,000mAh power bank that slips easily into any bag.",
+              "price": 34.99,
+              "discount": 0,
+              "finalPrice": 34.99,
+              "currency": "USD",
+              "specs": {
+                "Capacity": "10,000mAh",
+                "Output": "USB-C PD 20W",
+                "Weight": "180g"
+              },
+              "tags": [
+                "slim",
+                "everyday-carry"
+              ],
+              "inStock": true,
+              "featured": false,
+              "isNew": false,
+              "image": "products/power/power-banks/images/volt-10k-slim.svg",
+              "categorySlug": "power",
+              "categoryName": "Power & Charging",
+              "subcategorySlug": "power-banks",
+              "subcategoryName": "Power Banks"
+            }
+          ]
+        }
+      ]
     }
   ],
   "products": [
+    {
+      "slug": "drift-xxl",
+      "name": "Drift XXL",
+      "description": "Extended desk mat that fits your keyboard, mouse and more.",
+      "price": 24.99,
+      "discount": 0,
+      "finalPrice": 24.99,
+      "currency": "USD",
+      "specs": {
+        "Size": "900 x 400mm",
+        "Surface": "Micro-woven cloth",
+        "Base": "Non-slip rubber"
+      },
+      "tags": [
+        "extended",
+        "cloth"
+      ],
+      "inStock": true,
+      "featured": false,
+      "isNew": false,
+      "image": "products/accessories/mousepads/images/drift-xxl.svg",
+      "categorySlug": "accessories",
+      "categoryName": "Desk Accessories",
+      "subcategorySlug": "mousepads",
+      "subcategoryName": "Mousepads"
+    },
+    {
+      "slug": "glide-zero",
+      "name": "Glide Zero",
+      "description": "Hard, low-friction surface built for fast, precise mouse control.",
+      "price": 19.99,
+      "discount": 10,
+      "finalPrice": 17.99,
+      "currency": "USD",
+      "specs": {
+        "Size": "450 x 400mm",
+        "Surface": "Hard polymer",
+        "Base": "Non-slip rubber"
+      },
+      "tags": [
+        "hard-surface",
+        "gaming"
+      ],
+      "inStock": true,
+      "featured": false,
+      "isNew": false,
+      "image": "products/accessories/mousepads/images/glide-zero.svg",
+      "categorySlug": "accessories",
+      "categoryName": "Desk Accessories",
+      "subcategorySlug": "mousepads",
+      "subcategoryName": "Mousepads"
+    },
+    {
+      "slug": "elevate-laptop-stand",
+      "name": "Elevate Laptop Stand",
+      "description": "Adjustable aluminum stand that raises your laptop to eye level.",
+      "price": 34.99,
+      "discount": 0,
+      "finalPrice": 34.99,
+      "currency": "USD",
+      "specs": {
+        "Material": "Aluminum",
+        "Adjustability": "6 height levels",
+        "Compatibility": "11 to 17 inch laptops"
+      },
+      "tags": [
+        "ergonomic",
+        "aluminum"
+      ],
+      "inStock": true,
+      "featured": false,
+      "isNew": false,
+      "image": "products/accessories/stands/images/elevate-laptop-stand.svg",
+      "categorySlug": "accessories",
+      "categoryName": "Desk Accessories",
+      "subcategorySlug": "stands",
+      "subcategoryName": "Stands & Mounts"
+    },
+    {
+      "slug": "orbit-monitor-arm",
+      "name": "Orbit Monitor Arm",
+      "description": "Full-motion monitor arm that frees up your entire desk surface.",
+      "price": 69,
+      "discount": 15,
+      "finalPrice": 58.65,
+      "currency": "USD",
+      "specs": {
+        "Load Capacity": "2 to 9kg",
+        "Mount": "Desk clamp / grommet",
+        "Motion": "Full articulation"
+      },
+      "tags": [
+        "ergonomic",
+        "monitor-arm"
+      ],
+      "inStock": true,
+      "featured": true,
+      "isNew": false,
+      "image": "products/accessories/stands/images/orbit-monitor-arm.svg",
+      "categorySlug": "accessories",
+      "categoryName": "Desk Accessories",
+      "subcategorySlug": "stands",
+      "subcategoryName": "Stands & Mounts"
+    },
+    {
+      "slug": "sonic-wave-anc",
+      "name": "Sonic Wave ANC",
+      "description": "Over-ear headphones with active noise cancellation and 35-hour battery life.",
+      "price": 179,
+      "discount": 12,
+      "finalPrice": 157.52,
+      "currency": "USD",
+      "specs": {
+        "Type": "Over-ear, closed-back",
+        "Noise Cancelling": "Active (ANC)",
+        "Battery Life": "Up to 35 hours",
+        "Connectivity": "Bluetooth 5.3 / 3.5mm"
+      },
+      "tags": [
+        "anc",
+        "wireless",
+        "over-ear"
+      ],
+      "inStock": true,
+      "featured": true,
+      "isNew": false,
+      "image": "products/audio/headphones/images/sonic-wave-anc.svg",
+      "categorySlug": "audio",
+      "categoryName": "Audio",
+      "subcategorySlug": "headphones",
+      "subcategoryName": "Headphones"
+    },
+    {
+      "slug": "airpulse-buds",
+      "name": "AirPulse Buds",
+      "description": "True wireless earbuds with a compact charging case and punchy bass.",
+      "price": 89.99,
+      "discount": 0,
+      "finalPrice": 89.99,
+      "currency": "USD",
+      "specs": {
+        "Type": "In-ear, true wireless",
+        "Battery Life": "6h (24h with case)",
+        "Connectivity": "Bluetooth 5.2",
+        "Water Resistance": "IPX4"
+      },
+      "tags": [
+        "wireless",
+        "earbuds",
+        "compact"
+      ],
+      "inStock": true,
+      "featured": false,
+      "isNew": true,
+      "image": "products/audio/headphones/images/airpulse-buds.svg",
+      "categorySlug": "audio",
+      "categoryName": "Audio",
+      "subcategorySlug": "headphones",
+      "subcategoryName": "Headphones"
+    },
+    {
+      "slug": "boom-cube-mini",
+      "name": "Boom Cube Mini",
+      "description": "Pocket-size Bluetooth speaker with surprisingly big bass.",
+      "price": 44.99,
+      "discount": 18,
+      "finalPrice": 36.89,
+      "currency": "USD",
+      "specs": {
+        "Output": "10W",
+        "Battery Life": "Up to 12 hours",
+        "Connectivity": "Bluetooth 5.0",
+        "Water Resistance": "IPX6"
+      },
+      "tags": [
+        "bluetooth",
+        "portable"
+      ],
+      "inStock": true,
+      "featured": false,
+      "isNew": false,
+      "image": "products/audio/speakers/images/boom-cube-mini.svg",
+      "categorySlug": "audio",
+      "categoryName": "Audio",
+      "subcategorySlug": "speakers",
+      "subcategoryName": "Speakers"
+    },
+    {
+      "slug": "resonate-pro",
+      "name": "Resonate Pro",
+      "description": "Desktop 2.0 speaker set tuned for music production and movies.",
+      "price": 129,
+      "discount": 0,
+      "finalPrice": 129,
+      "currency": "USD",
+      "specs": {
+        "Output": "2 x 25W",
+        "Connectivity": "USB-C / 3.5mm / Bluetooth",
+        "Drivers": "3-inch woofer + tweeter"
+      },
+      "tags": [
+        "desktop",
+        "hi-fi"
+      ],
+      "inStock": true,
+      "featured": false,
+      "isNew": false,
+      "image": "products/audio/speakers/images/resonate-pro.svg",
+      "categorySlug": "audio",
+      "categoryName": "Audio",
+      "subcategorySlug": "speakers",
+      "subcategoryName": "Speakers"
+    },
     {
       "slug": "aurora-tkl",
       "name": "Aurora TKL",
@@ -291,6 +892,7 @@
       ],
       "inStock": true,
       "featured": true,
+      "isNew": false,
       "image": "products/keyboards/mechanical/images/aurora-tkl.svg",
       "categorySlug": "keyboards",
       "categoryName": "Keyboards",
@@ -317,6 +919,7 @@
       ],
       "inStock": true,
       "featured": false,
+      "isNew": false,
       "image": "products/keyboards/mechanical/images/titan-full-size.svg",
       "categorySlug": "keyboards",
       "categoryName": "Keyboards",
@@ -343,6 +946,7 @@
       ],
       "inStock": true,
       "featured": false,
+      "isNew": false,
       "image": "products/keyboards/membrane/images/breeze-office.svg",
       "categorySlug": "keyboards",
       "categoryName": "Keyboards",
@@ -369,6 +973,7 @@
       ],
       "inStock": true,
       "featured": false,
+      "isNew": false,
       "image": "products/keyboards/membrane/images/quietype-slim.svg",
       "categorySlug": "keyboards",
       "categoryName": "Keyboards",
@@ -396,6 +1001,7 @@
       ],
       "inStock": true,
       "featured": true,
+      "isNew": false,
       "image": "products/mice/gaming/images/raptor-gx.svg",
       "categorySlug": "mice",
       "categoryName": "Mice",
@@ -422,6 +1028,7 @@
       ],
       "inStock": true,
       "featured": false,
+      "isNew": false,
       "image": "products/mice/gaming/images/vector-pro.svg",
       "categorySlug": "mice",
       "categoryName": "Mice",
@@ -448,6 +1055,7 @@
       ],
       "inStock": true,
       "featured": true,
+      "isNew": false,
       "image": "products/mice/wireless/images/nova-wireless.svg",
       "categorySlug": "mice",
       "categoryName": "Mice",
@@ -473,11 +1081,116 @@
       ],
       "inStock": true,
       "featured": false,
+      "isNew": false,
       "image": "products/mice/wireless/images/glide-air.svg",
       "categorySlug": "mice",
       "categoryName": "Mice",
       "subcategorySlug": "wireless",
       "subcategoryName": "Wireless"
+    },
+    {
+      "slug": "nexus-usb-c-hub",
+      "name": "Nexus USB-C Hub",
+      "description": "7-in-1 USB-C hub with HDMI, card reader and 100W pass-through.",
+      "price": 39.99,
+      "discount": 0,
+      "finalPrice": 39.99,
+      "currency": "USD",
+      "specs": {
+        "Ports": "HDMI, 2x USB-A, SD/microSD, USB-C PD",
+        "Video Output": "4K@60Hz",
+        "Power Delivery": "100W pass-through"
+      },
+      "tags": [
+        "usb-c",
+        "multiport"
+      ],
+      "inStock": true,
+      "featured": false,
+      "isNew": true,
+      "image": "products/power/hubs/images/nexus-usb-c-hub.svg",
+      "categorySlug": "power",
+      "categoryName": "Power & Charging",
+      "subcategorySlug": "hubs",
+      "subcategoryName": "Hubs & Docks"
+    },
+    {
+      "slug": "nexus-dock-pro",
+      "name": "Nexus Dock Pro",
+      "description": "Triple-monitor docking station for a full desktop setup from one cable.",
+      "price": 119,
+      "discount": 10,
+      "finalPrice": 107.1,
+      "currency": "USD",
+      "specs": {
+        "Video Output": "Triple 4K@60Hz",
+        "Ports": "Ethernet, 4x USB-A, USB-C, audio",
+        "Compatibility": "USB-C / Thunderbolt laptops"
+      },
+      "tags": [
+        "docking-station",
+        "multi-monitor"
+      ],
+      "inStock": true,
+      "featured": false,
+      "isNew": false,
+      "image": "products/power/hubs/images/nexus-dock-pro.svg",
+      "categorySlug": "power",
+      "categoryName": "Power & Charging",
+      "subcategorySlug": "hubs",
+      "subcategoryName": "Hubs & Docks"
+    },
+    {
+      "slug": "volt-20k-power-bank",
+      "name": "Volt 20K Power Bank",
+      "description": "20,000mAh power bank with fast-charge output for phones and laptops.",
+      "price": 54.99,
+      "discount": 20,
+      "finalPrice": 43.99,
+      "currency": "USD",
+      "specs": {
+        "Capacity": "20,000mAh",
+        "Output": "USB-C PD 65W + USB-A",
+        "Recharge Time": "About 2.5 hours"
+      },
+      "tags": [
+        "fast-charge",
+        "high-capacity"
+      ],
+      "inStock": true,
+      "featured": true,
+      "isNew": true,
+      "image": "products/power/power-banks/images/volt-20k-power-bank.svg",
+      "categorySlug": "power",
+      "categoryName": "Power & Charging",
+      "subcategorySlug": "power-banks",
+      "subcategoryName": "Power Banks"
+    },
+    {
+      "slug": "volt-10k-slim",
+      "name": "Volt 10K Slim",
+      "description": "Slim 10,000mAh power bank that slips easily into any bag.",
+      "price": 34.99,
+      "discount": 0,
+      "finalPrice": 34.99,
+      "currency": "USD",
+      "specs": {
+        "Capacity": "10,000mAh",
+        "Output": "USB-C PD 20W",
+        "Weight": "180g"
+      },
+      "tags": [
+        "slim",
+        "everyday-carry"
+      ],
+      "inStock": true,
+      "featured": false,
+      "isNew": false,
+      "image": "products/power/power-banks/images/volt-10k-slim.svg",
+      "categorySlug": "power",
+      "categoryName": "Power & Charging",
+      "subcategorySlug": "power-banks",
+      "subcategoryName": "Power Banks"
     }
   ]
 }

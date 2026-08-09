@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Atef Tech Gadgets</title>
-  <meta name="description" content="Keyboards, mice and gear — curated tech gadgets." />
+  <meta name="description" content="Keyboards, mice, audio and desk gear — curated tech gadgets." />
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body data-theme="light">
@@ -15,20 +18,37 @@
         <img src="assets/img/favicon.svg" alt="" class="brand-logo" />
         <span class="brand-name" id="brand-name">Atef Tech Gadgets</span>
       </a>
-      <p class="tagline" id="brand-tagline"></p>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
         <span id="theme-icon">🌙</span>
       </button>
     </div>
   </header>
 
-  <div class="toolbar">
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Curated tech gadgets</p>
+      <h1 id="hero-title">Gear that keeps up with you.</h1>
+      <p class="hero-sub" id="hero-sub">Keyboards, mice, audio and desk accessories — picked for people who care about their setup.</p>
+      <a href="#catalog" class="btn-primary">Browse the catalog ↓</a>
+      <div class="hero-stats" id="hero-stats"></div>
+    </div>
+  </section>
+
+  <section class="featured" id="featured-section" hidden>
+    <div class="featured-inner">
+      <h2 class="section-title">Featured picks</h2>
+      <div class="featured-track" id="featured-track"></div>
+    </div>
+  </section>
+
+  <div class="toolbar" id="catalog">
     <div class="toolbar-inner">
       <div class="search-wrap">
         <input type="search" id="search-input" placeholder="Search products…" aria-label="Search products" />
       </div>
       <select id="sort-select" aria-label="Sort products">
         <option value="featured">Featured</option>
+        <option value="newest">Newest</option>
         <option value="price-asc">Price: Low to High</option>
         <option value="price-desc">Price: High to Low</option>
         <option value="discount">Biggest Discount</option>
@@ -48,12 +68,24 @@
     <main class="content">
       <div id="active-filters" class="active-filters" hidden></div>
       <p id="result-count" class="result-count"></p>
-      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+
+      <div id="skeleton-grid" class="product-grid">
+        <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div><div class="skeleton-line medium"></div></div>
+        <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div><div class="skeleton-line medium"></div></div>
+        <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div><div class="skeleton-line medium"></div></div>
+        <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div><div class="skeleton-line medium"></div></div>
+        <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div><div class="skeleton-line medium"></div></div>
+        <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div><div class="skeleton-line medium"></div></div>
+        <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div><div class="skeleton-line medium"></div></div>
+        <div class="skeleton-card"><div class="skeleton-media"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div><div class="skeleton-line medium"></div></div>
+      </div>
+
+      <div id="product-grid" class="product-grid" aria-live="polite" hidden></div>
       <div id="empty-state" class="empty-state" hidden>
         <p>No products match your filters.</p>
         <button id="clear-filters">Clear filters</button>
       </div>
-      <div id="loading-state" class="loading-state">Loading catalog…</div>
+      <p id="error-state" class="error-state" hidden></p>
     </main>
   </div>
 

@@ -12,18 +12,24 @@
   const els = {
     categoryList: document.getElementById('category-list'),
     productGrid: document.getElementById('product-grid'),
+    skeletonGrid: document.getElementById('skeleton-grid'),
     resultCount: document.getElementById('result-count'),
     emptyState: document.getElementById('empty-state'),
-    loadingState: document.getElementById('loading-state'),
+    errorState: document.getElementById('error-state'),
     activeFilters: document.getElementById('active-filters'),
     searchInput: document.getElementById('search-input'),
     sortSelect: document.getElementById('sort-select'),
     clearFilters: document.getElementById('clear-filters'),
     brandName: document.getElementById('brand-name'),
-    brandTagline: document.getElementById('brand-tagline'),
+    heroTitle: document.getElementById('hero-title'),
+    heroSub: document.getElementById('hero-sub'),
+    heroStats: document.getElementById('hero-stats'),
+    featuredSection: document.getElementById('featured-section'),
+    featuredTrack: document.getElementById('featured-track'),
     footerContact: document.getElementById('footer-contact'),
     themeToggle: document.getElementById('theme-toggle'),
     themeIcon: document.getElementById('theme-icon'),
+    toolbar: document.querySelector('.toolbar'),
     modal: document.getElementById('product-modal'),
     modalBody: document.getElementById('modal-body'),
     modalClose: document.getElementById('modal-close'),
@@ -70,7 +76,7 @@
       els.brandName.textContent = site.businessName;
       document.title = site.businessName;
     }
-    if (site.tagline) els.brandTagline.textContent = site.tagline;
+    if (site.tagline) els.heroSub.textContent = site.tagline;
 
     const contact = site.contact || {};
     const links = [];
@@ -81,6 +87,25 @@
     els.footerContact.innerHTML = links.length
       ? links.join(' · ')
       : `© ${new Date().getFullYear()} ${escapeHtml(site.businessName || 'Store')}`;
+  }
+
+  function renderHeroStats(catalog) {
+    const totalProducts = catalog.products.length;
+    const totalCategories = catalog.categories.length;
+    const onSale = catalog.products.filter((p) => p.discount > 0).length;
+
+    const stats = [
+      { value: totalProducts, label: `Product${totalProducts === 1 ? '' : 's'}` },
+      { value: totalCategories, label: `Categor${totalCategories === 1 ? 'y' : 'ies'}` },
+      { value: onSale, label: 'On Sale' },
+    ];
+
+    els.heroStats.innerHTML = stats.map((s) => `
+      <div class="hero-stat">
+        <span class="stat-value">${s.value}</span>
+        <span class="stat-label">${escapeHtml(s.label)}</span>
+      </div>
+    `).join('');
   }
 
   // ---------- Sidebar ----------
@@ -144,6 +169,30 @@
   }
 
   // ---------- Filtering / sorting ----------
+  function sortProducts(list, sort) {
+    const sorted = list.slice();
+    switch (sort) {
+      case 'price-asc':
+        sorted.sort((a, b) => a.finalPrice - b.finalPrice);
+        break;
+      case 'price-desc':
+        sorted.sort((a, b) => b.finalPrice - a.finalPrice);
+        break;
+      case 'discount':
+        sorted.sort((a, b) => b.discount - a.discount);
+        break;
+      case 'name':
+        sorted.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case 'newest':
+        sorted.sort((a, b) => (b.isNew === a.isNew ? 0 : b.isNew ? 1 : -1));
+        break;
+      default:
+        sorted.sort((a, b) => (b.featured === a.featured ? 0 : b.featured ? 1 : -1));
+    }
+    return sorted;
+  }
+
   function getFilteredProducts() {
     let list = state.catalog.products.slice();
 
@@ -162,24 +211,7 @@
       );
     }
 
-    switch (state.sort) {
-      case 'price-asc':
-        list.sort((a, b) => a.finalPrice - b.finalPrice);
-        break;
-      case 'price-desc':
-        list.sort((a, b) => b.finalPrice - a.finalPrice);
-        break;
-      case 'discount':
-        list.sort((a, b) => b.discount - a.discount);
-        break;
-      case 'name':
-        list.sort((a, b) => a.name.localeCompare(b.name));
-        break;
-      default:
-        list.sort((a, b) => (b.featured === a.featured ? 0 : b.featured ? 1 : -1));
-    }
-
-    return list;
+    return sortProducts(list, state.sort);
   }
 
   // ---------- Active filter chips ----------
@@ -213,6 +245,67 @@
     });
   }
 
+  // ---------- Product card ----------
+  function badgeRowHtml(p) {
+    const left = [];
+    if (p.discount > 0) left.push(`<span class="badge discount">-${p.discount}%</span>`);
+    if (p.isNew) left.push(`<span class="badge new">New</span>`);
+    const right = !p.inStock ? `<span class="badge out-of-stock">Sold out</span>` : '';
+    if (!left.length && !right) return '';
+    return `<div class="badge-row"><div class="badge-row-left">${left.join('')}</div><div class="badge-row-right">${right}</div></div>`;
+  }
+
+  function priceHtml(p, symbol) {
+    return p.discount > 0
+      ? `<span class="price-final">${formatMoney(p.finalPrice, symbol)}</span><span class="price-original">${formatMoney(p.price, symbol)}</span>`
+      : `<span class="price-final">${formatMoney(p.price, symbol)}</span>`;
+  }
+
+  function buildCard(p, symbol, index) {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.style.animationDelay = `${Math.min(index, 12) * 30}ms`;
+    card.tabIndex = 0;
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', `View ${p.name}`);
+
+    card.innerHTML = `
+      <div class="product-media">
+        ${badgeRowHtml(p)}
+        <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy" onerror="this.src='assets/img/placeholder.svg'" />
+        <div class="quick-view">Quick view →</div>
+      </div>
+      <div class="product-info">
+        <span class="product-category">${escapeHtml(p.categoryName)} · ${escapeHtml(p.subcategoryName)}</span>
+        <h3 class="product-name">${escapeHtml(p.name)}</h3>
+        <p class="product-desc">${escapeHtml(p.description)}</p>
+        <div class="price-row">${priceHtml(p, symbol)}</div>
+      </div>
+    `;
+
+    card.addEventListener('click', () => openModal(p));
+    card.addEventListener('keypress', (e) => { if (e.key === 'Enter') openModal(p); });
+    return card;
+  }
+
+  // ---------- Featured carousel ----------
+  function renderFeatured(catalog) {
+    const featured = catalog.products.filter((p) => p.featured);
+    if (!featured.length) {
+      els.featuredSection.hidden = true;
+      return;
+    }
+    const symbol = (catalog.site && catalog.site.currencySymbol) || '$';
+    els.featuredTrack.innerHTML = '';
+    featured.forEach((p, i) => {
+      const wrap = document.createElement('div');
+      wrap.className = 'featured-card';
+      wrap.appendChild(buildCard(p, symbol, i));
+      els.featuredTrack.appendChild(wrap);
+    });
+    els.featuredSection.hidden = false;
+  }
+
   // ---------- Product grid ----------
   function renderProducts(list) {
     els.productGrid.innerHTML = '';
@@ -220,51 +313,19 @@
 
     if (!list.length) {
       els.emptyState.hidden = false;
+      els.productGrid.hidden = true;
       return;
     }
     els.emptyState.hidden = true;
+    els.productGrid.hidden = false;
 
     const symbol = (state.catalog.site && state.catalog.site.currencySymbol) || '$';
-
-    list.forEach((p) => {
-      const card = document.createElement('div');
-      card.className = 'product-card';
-      card.tabIndex = 0;
-      card.setAttribute('role', 'button');
-      card.setAttribute('aria-label', `View ${p.name}`);
-
-      const badge = p.discount > 0 ? `<span class="badge">-${p.discount}%</span>` : '';
-      const stockBadge = !p.inStock ? `<span class="badge out-of-stock">Sold out</span>` : '';
-      const priceHtml = p.discount > 0
-        ? `<span class="price-final">${formatMoney(p.finalPrice, symbol)}</span><span class="price-original">${formatMoney(p.price, symbol)}</span>`
-        : `<span class="price-final">${formatMoney(p.price, symbol)}</span>`;
-
-      card.innerHTML = `
-        <div class="product-media">
-          ${badge}${stockBadge}
-          <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy" onerror="this.src='assets/img/placeholder.svg'" />
-        </div>
-        <div class="product-info">
-          <span class="product-category">${escapeHtml(p.categoryName)} · ${escapeHtml(p.subcategoryName)}</span>
-          <h3 class="product-name">${escapeHtml(p.name)}</h3>
-          <p class="product-desc">${escapeHtml(p.description)}</p>
-          <div class="price-row">${priceHtml}</div>
-        </div>
-      `;
-
-      card.addEventListener('click', () => openModal(p));
-      card.addEventListener('keypress', (e) => { if (e.key === 'Enter') openModal(p); });
-
-      els.productGrid.appendChild(card);
-    });
+    list.forEach((p, i) => els.productGrid.appendChild(buildCard(p, symbol, i)));
   }
 
   // ---------- Modal ----------
   function openModal(p) {
     const symbol = (state.catalog.site && state.catalog.site.currencySymbol) || '$';
-    const priceHtml = p.discount > 0
-      ? `<span class="price-final">${formatMoney(p.finalPrice, symbol)}</span> <span class="price-original">${formatMoney(p.price, symbol)}</span>`
-      : `<span class="price-final">${formatMoney(p.price, symbol)}</span>`;
 
     const specsRows = Object.entries(p.specs || {})
       .map(([k, v]) => `<tr><td>${escapeHtml(k)}</td><td>${escapeHtml(v)}</td></tr>`)
@@ -285,7 +346,7 @@
         <div class="modal-details">
           <span class="product-category">${escapeHtml(p.categoryName)} · ${escapeHtml(p.subcategoryName)}</span>
           <h2 id="modal-title">${escapeHtml(p.name)}</h2>
-          <div class="price-row">${priceHtml}</div>
+          <div class="price-row">${priceHtml(p, symbol)}</div>
           ${!p.inStock ? '<p><strong>Currently sold out</strong></p>' : ''}
           <p>${escapeHtml(p.description)}</p>
           ${tags ? `<div class="tag-list">${tags}</div>` : ''}
@@ -339,6 +400,10 @@
       state.query = '';
       els.searchInput.value = '';
       render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    window.addEventListener('scroll', () => {
+      els.toolbar.classList.toggle('scrolled', window.scrollY > 140);
     });
   }
 
@@ -347,11 +412,15 @@
     wireControls();
     try {
       state.catalog = await loadCatalog();
-      els.loadingState.hidden = true;
+      els.skeletonGrid.hidden = true;
       renderBrand(state.catalog.site || {});
+      renderHeroStats(state.catalog);
+      renderFeatured(state.catalog);
       render();
     } catch (err) {
-      els.loadingState.textContent = 'Could not load the catalog. If you just added products, run "npm run build" and refresh.';
+      els.skeletonGrid.hidden = true;
+      els.errorState.hidden = false;
+      els.errorState.textContent = 'Could not load the catalog. If you just added products, run "npm run build" and refresh.';
       console.error(err);
     }
   }

@@ -1,0 +1,37 @@
+{
+  "displayName": "Power Banks",
+  "description": "Portable battery packs for phones, tablets and laptops.",
+  "products": [
+    {
+      "slug": "volt-20k-power-bank",
+      "name": "Volt 20K Power Bank",
+      "price": 54.99,
+      "discount": 20,
+      "description": "20,000mAh power bank with fast-charge output for phones and laptops.",
+      "specs": {
+        "Capacity": "20,000mAh",
+        "Output": "USB-C PD 65W + USB-A",
+        "Recharge Time": "About 2.5 hours"
+      },
+      "tags": ["fast-charge", "high-capacity"],
+      "inStock": true,
+      "featured": true,
+      "new": true
+    },
+    {
+      "slug": "volt-10k-slim",
+      "name": "Volt 10K Slim",
+      "price": 34.99,
+      "discount": 0,
+      "description": "Slim 10,000mAh power bank that slips easily into any bag.",
+      "specs": {
+        "Capacity": "10,000mAh",
+        "Output": "USB-C PD 20W",
+        "Weight": "180g"
+      },
+      "tags": ["slim", "everyday-carry"],
+      "inStock": true,
+      "featured": false
+    }
+  ]
+}

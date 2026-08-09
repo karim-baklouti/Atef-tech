@@ -116,6 +116,7 @@ function buildCatalog() {
           tags: raw.tags || [],
           inStock: raw.inStock !== false,
           featured: !!raw.featured,
+          isNew: !!raw.new,
           image: imageFile
             ? `products/${categorySlugRaw}/${subSlugRaw}/images/${imageFile}`
             : 'assets/img/placeholder.svg',

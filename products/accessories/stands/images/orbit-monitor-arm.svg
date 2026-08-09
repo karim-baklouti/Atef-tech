@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#g)"/>
+  <circle cx="300" cy="190" r="100" fill="#ffffff" opacity="0.12"/>
+  <circle cx="300" cy="190" r="70" fill="#ffffff" opacity="0.1"/>
+  <g transform="translate(215,105) scale(1.7)">
+    
+    <rect x="24" y="16" width="52" height="34" rx="4" fill="#fff" opacity="0.85"/>
+    <polygon points="34,64 66,64 78,84 22,84" fill="#fff" opacity="0.35"/>
+  
+  </g>
+  <text x="300" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#ffffff" font-weight="700">Orbit Monitor Arm</text>
+  <text x="300" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.8">Monitor Arm</text>
+</svg>

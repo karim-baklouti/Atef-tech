@@ -1,0 +1,36 @@
+{
+  "displayName": "Stands & Mounts",
+  "description": "Ergonomic lifts for laptops and monitors.",
+  "products": [
+    {
+      "slug": "elevate-laptop-stand",
+      "name": "Elevate Laptop Stand",
+      "price": 34.99,
+      "discount": 0,
+      "description": "Adjustable aluminum stand that raises your laptop to eye level.",
+      "specs": {
+        "Material": "Aluminum",
+        "Adjustability": "6 height levels",
+        "Compatibility": "11 to 17 inch laptops"
+      },
+      "tags": ["ergonomic", "aluminum"],
+      "inStock": true,
+      "featured": false
+    },
+    {
+      "slug": "orbit-monitor-arm",
+      "name": "Orbit Monitor Arm",
+      "price": 69.0,
+      "discount": 15,
+      "description": "Full-motion monitor arm that frees up your entire desk surface.",
+      "specs": {
+        "Load Capacity": "2 to 9kg",
+        "Mount": "Desk clamp / grommet",
+        "Motion": "Full articulation"
+      },
+      "tags": ["ergonomic", "monitor-arm"],
+      "inStock": true,
+      "featured": true
+    }
+  ]
+}

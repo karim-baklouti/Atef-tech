@@ -1,0 +1,39 @@
+{
+  "displayName": "Headphones",
+  "description": "Over-ear and in-ear audio for focus, calls and gaming.",
+  "products": [
+    {
+      "slug": "sonic-wave-anc",
+      "name": "Sonic Wave ANC",
+      "price": 179.0,
+      "discount": 12,
+      "description": "Over-ear headphones with active noise cancellation and 35-hour battery life.",
+      "specs": {
+        "Type": "Over-ear, closed-back",
+        "Noise Cancelling": "Active (ANC)",
+        "Battery Life": "Up to 35 hours",
+        "Connectivity": "Bluetooth 5.3 / 3.5mm"
+      },
+      "tags": ["anc", "wireless", "over-ear"],
+      "inStock": true,
+      "featured": true
+    },
+    {
+      "slug": "airpulse-buds",
+      "name": "AirPulse Buds",
+      "price": 89.99,
+      "discount": 0,
+      "description": "True wireless earbuds with a compact charging case and punchy bass.",
+      "specs": {
+        "Type": "In-ear, true wireless",
+        "Battery Life": "6h (24h with case)",
+        "Connectivity": "Bluetooth 5.2",
+        "Water Resistance": "IPX4"
+      },
+      "tags": ["wireless", "earbuds", "compact"],
+      "inStock": true,
+      "featured": false,
+      "new": true
+    }
+  ]
+}

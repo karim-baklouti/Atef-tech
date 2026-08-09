@@ -1,0 +1,37 @@
+{
+  "displayName": "Hubs & Docks",
+  "description": "Expand your ports for multi-monitor, storage and networking.",
+  "products": [
+    {
+      "slug": "nexus-usb-c-hub",
+      "name": "Nexus USB-C Hub",
+      "price": 39.99,
+      "discount": 0,
+      "description": "7-in-1 USB-C hub with HDMI, card reader and 100W pass-through.",
+      "specs": {
+        "Ports": "HDMI, 2x USB-A, SD/microSD, USB-C PD",
+        "Video Output": "4K@60Hz",
+        "Power Delivery": "100W pass-through"
+      },
+      "tags": ["usb-c", "multiport"],
+      "inStock": true,
+      "featured": false,
+      "new": true
+    },
+    {
+      "slug": "nexus-dock-pro",
+      "name": "Nexus Dock Pro",
+      "price": 119.0,
+      "discount": 10,
+      "description": "Triple-monitor docking station for a full desktop setup from one cable.",
+      "specs": {
+        "Video Output": "Triple 4K@60Hz",
+        "Ports": "Ethernet, 4x USB-A, USB-C, audio",
+        "Compatibility": "USB-C / Thunderbolt laptops"
+      },
+      "tags": ["docking-station", "multi-monitor"],
+      "inStock": true,
+      "featured": false
+    }
+  ]
+}

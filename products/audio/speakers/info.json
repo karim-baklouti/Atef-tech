@@ -1,0 +1,37 @@
+{
+  "displayName": "Speakers",
+  "description": "Desktop and portable speakers for richer sound.",
+  "products": [
+    {
+      "slug": "boom-cube-mini",
+      "name": "Boom Cube Mini",
+      "price": 44.99,
+      "discount": 18,
+      "description": "Pocket-size Bluetooth speaker with surprisingly big bass.",
+      "specs": {
+        "Output": "10W",
+        "Battery Life": "Up to 12 hours",
+        "Connectivity": "Bluetooth 5.0",
+        "Water Resistance": "IPX6"
+      },
+      "tags": ["bluetooth", "portable"],
+      "inStock": true,
+      "featured": false
+    },
+    {
+      "slug": "resonate-pro",
+      "name": "Resonate Pro",
+      "price": 129.0,
+      "discount": 0,
+      "description": "Desktop 2.0 speaker set tuned for music production and movies.",
+      "specs": {
+        "Output": "2 x 25W",
+        "Connectivity": "USB-C / 3.5mm / Bluetooth",
+        "Drivers": "3-inch woofer + tweeter"
+      },
+      "tags": ["desktop", "hi-fi"],
+      "inStock": true,
+      "featured": false
+    }
+  ]
+}
