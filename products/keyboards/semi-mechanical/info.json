@@ -1,0 +1,21 @@
+{
+  "displayName": "Mechanical",
+  "description": "Full tactile and clicky switches for typists and gamers who want precision.",
+  "products": [
+    {
+      "slug": "Redragon",
+      "name": "Redragon F123",
+      "price": 55,
+      "discount": 10,
+      "description": "Tenkeyless Semi-mechanical keyboard with hot-swappable switches and per-key RGB lighting.",
+      "specs": {
+        "Layout": "TKL (87-key)",
+        "Switches": "Hot-swappable, brown tactile (included)",
+        "Connectivity": "USB-C wired",
+        "Backlight": "Per-key RGB"
+      },
+      "tags": ["tenkeyless", "rgb", "hot-swap"],
+      "inStock": true,
+      "featured": true
+}
+}
